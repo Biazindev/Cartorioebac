@@ -133,7 +133,8 @@ int main () //ponto de partida para execução do programa
       printf("Escolha a opção desejada do menu:\n\n");
 	  printf("\t1 - Registrar Nomes\n"); // \t usado para espaço anterior a frase
       printf("\t2 - Consultar Nomes\n");	
-      printf("\t3 - Deletar Nomes\n\n");
+      printf("\t3 - Deletar Nomes\n");
+	  printf("\t4 - Sair do sistema\n");
 	  printf("Opção:"); //fim do menu
     
 	  scanf("%d", & opcao); //armazenando a escolha do usuario
@@ -152,6 +153,11 @@ int main () //ponto de partida para execução do programa
 			
 			case 3:
 		    deletar();
+	        break;
+	        
+	        case 4:
+	        printf("Obrigado por utilizar o sistema!\n\n");
+	        return 0;
 	        break;
 			
 			default:
